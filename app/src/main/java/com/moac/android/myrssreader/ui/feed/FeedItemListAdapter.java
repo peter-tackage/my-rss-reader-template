@@ -1,87 +1,49 @@
 package com.moac.android.myrssreader.ui.feed;
 
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
-import com.moac.android.myrssreader.R;
-import com.moac.android.myrssreader.model.FeedItem;
-
-import java.util.List;
 
 /**
  * Creates View items to be displayed in a RecyclerView, populated with data.
  */
 public class FeedItemListAdapter extends RecyclerView.Adapter<FeedItemListAdapter.ViewHolder> {
 
-    private final List<FeedItem> dataset;
-    private final OnFeedItemClickListener onFeedItemClickListener;
-
-    public FeedItemListAdapter(final List<FeedItem> dataset,
-                               OnFeedItemClickListener onFeedItemClickListener) {
-        this.dataset = dataset;
-        this.onFeedItemClickListener = onFeedItemClickListener;
-    }
+    // TODO Create a constructor that uses a List<Item> and an OnFeedItemClickListener
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent,
                                          int viewType) {
         // Create a new View instances from the XML layout definition
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.view_feed_item, parent, false);
-        return new ViewHolder(view);
+
+        // TODO Inflate view_feed_item and return a new ViewHolder using the View
+        return null;
     }
 
-    // Bind a View (new or recycled) to a data item
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.bindItem(dataset.get(position), onFeedItemClickListener);
+        // TODO Get the data items and bind it to the ViewHolder (set the value!)
     }
 
     // Returns the size of the dataset
     @Override
     public int getItemCount() {
-        return dataset.size();
+        // TODO Make this return
+        return 0;
     }
 
-    /**
-     * An callback interface to notify when a feed item is clicked
-     */
-    public interface OnFeedItemClickListener {
-
-        void onItemClicked(FeedItem item);
-    }
 
     /**
-     * A recycleable representation of a View entity
+     * A recyclable representation of a View entity
      */
     static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private final View rootView;
-        private final TextView titleTextView;
-        private final TextView descriptionTextView;
-
         ViewHolder(View view) {
             super(view);
-            rootView = view;
-            titleTextView = (TextView) view.findViewById(R.id.textView_title);
-            descriptionTextView = (TextView) view.findViewById(R.id.textView_description);
+            // TODO Get references to the root, title and description Views
         }
 
-        /**
-         * Bind a FeedItem data model to the View
-         */
-        void bindItem(final FeedItem feedItem, final OnFeedItemClickListener clickListener) {
-            rootView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(final View v) {
-                    clickListener.onItemClicked(feedItem);
-                }
-            });
-            titleTextView.setText(feedItem.getTitle());
-            descriptionTextView.setText(feedItem.getDescription());
-        }
+        // TODO Add a bind() method assign the values to the fields (and the click listener!)
+
     }
 }

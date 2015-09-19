@@ -3,6 +3,11 @@ package com.moac.android.myrssreader.model;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+/**
+ * Simple-XML deserialization of a single RSS feed item.
+ *
+ * @see <a href="http://simple.sourceforge.net/download/stream/doc/tutorial/tutorial.php">Simple-XML</a>
+ */
 @Root(strict = false, name = "item")
 public class FeedItem {
 
@@ -14,9 +19,6 @@ public class FeedItem {
 
     @Element
     private String link;
-
-    @Element
-    private String pubDate;
 
     public String getTitle() {
         return title;
@@ -30,12 +32,4 @@ public class FeedItem {
         return link;
     }
 
-    /**
-     * The date, example: "Sun, 06 Sep 2015 23:15:41 GMT"
-     *
-     * @return a String representation of the Date.
-     */
-    public String getPublishedDate() {
-        return pubDate;
-    }
 }
