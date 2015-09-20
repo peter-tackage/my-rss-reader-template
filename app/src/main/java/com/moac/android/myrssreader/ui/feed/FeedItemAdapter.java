@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 /**
  * Creates View items to be displayed in a RecyclerView, populated with data.
  */
-public class FeedItemListAdapter extends RecyclerView.Adapter<FeedItemListAdapter.ViewHolder> {
+public class FeedItemAdapter extends RecyclerView.Adapter<FeedItemAdapter.ViewHolder> {
 
     // TODO Create a constructor that uses a List<Item> and an OnFeedItemClickListener
 
