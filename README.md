@@ -1,17 +1,9 @@
-My RSS Reader
-========
-A simple demo Android app showing how to load and display an RSS feed. The app is written for those
-new to Android development and thus it avoids using advanced techniques that might be more common in production
- ready apps.
+My RSS Reader (Template)
+========================
 
-It uses [Retrofit](http://square.github.io/retrofit/) and [Simple-XML](http://simple.sourceforge.net/)
- to fetch and parse the RSS feed items and it uses Android support library's [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html)
- and [CardView](https://developer.android.com/reference/android/support/v7/widget/CardView.html)
- to display the items in a list.
+IMPORTANT: This is not the greatest Android RSS Reader in the world, it is only a template.
 
- ![Screenshot 1](./screenshots/device-2015-09-09-170834.png)
-
- ![Screenshot 2](./screenshots/device-2015-09-09-171043.png)
+The completed version of the app is [here](https://github.com/peter-tackage/my-rss-reader)
 
 License
 -------
