@@ -4,6 +4,7 @@
              android:layout_height="match_parent"
              tools:context="com.moac.android.myrssreader.ui.feed.RssFeedActivity">
 
+    <!-- TODO Explain ViewGroups and FrameLayout -->
     <!-- TODO Add a RecyclerView with vertical scrollbars -->
 
 </FrameLayout>

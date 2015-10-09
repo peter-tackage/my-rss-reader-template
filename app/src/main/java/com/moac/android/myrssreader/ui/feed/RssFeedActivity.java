@@ -40,4 +40,6 @@ public class RssFeedActivity extends AppCompatActivity {
         // TODO Report the failure to application logs
     }
 
+    // TODO Add Helper method to get BbcFeedApi instance from Application subclass
+
 }

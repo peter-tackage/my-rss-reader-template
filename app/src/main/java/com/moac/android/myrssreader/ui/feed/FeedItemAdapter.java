@@ -28,9 +28,13 @@ public class FeedItemAdapter extends RecyclerView.Adapter<FeedItemAdapter.ViewHo
     // Returns the size of the dataset
     @Override
     public int getItemCount() {
-        // TODO Make this return
+        // TODO Make this return the dataset size
         return 0;
     }
+
+    /*
+     * TODO Add own OnFeedItemClickListener interface definition
+     */
 
 
     /**
@@ -43,7 +47,7 @@ public class FeedItemAdapter extends RecyclerView.Adapter<FeedItemAdapter.ViewHo
             // TODO Get references to the root, title and description Views
         }
 
-        // TODO Add a bind() method assign the values to the fields (and the click listener!)
+        // TODO Add a bind((FeedItem, OnFeedItemClickListener)) method assign the values to the fields (and the click listener!)
 
     }
 }
